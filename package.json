@@ -1,0 +1,41 @@
+{
+  "name": "parse-stack",
+  "version": "1.0.0",
+  "description": "Parse server + Parse Dashboard",
+  "main": "server.js",
+  "scripts": {
+    "start": "babel-node ./server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/duyetdev/parse-stack.git"
+  },
+  "keywords": [
+    "parse",
+    "android",
+    "api",
+    "server",
+    "dashboard",
+    "duyetdev"
+  ],
+  "author": "Van-Duyet Le <me@duyetdev.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/duyetdev/parse-stack/issues"
+  },
+  "homepage": "https://github.com/duyetdev/parse-stack#readme",
+  "dependencies": {
+    "express": "^4.14.0",
+    "parse": "^1.9.1",
+    "parse-dashboard": "^1.0.15",
+    "parse-server": "^2.2.17"
+  },
+  "engines": {
+    "node": ">=5.0",
+    "npm": ">=3.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.11.4"
+  }
+}

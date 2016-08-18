@@ -1,1 +1,1 @@
-require('./cloud/friends');
+// require('./cloud/friends');

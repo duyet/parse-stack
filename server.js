@@ -6,15 +6,14 @@
 
 import path from 'path';
 import express from 'express';
-import {Schema} from './schema/schema';
 import Parse from 'parse/node';
-import {ParseServer} from 'parse-server';
+import { ParseServer } from 'parse-server';
 import ParseDashboard from 'parse-dashboard';
-import c, { IS_DEVELOPMENT,  } from './config';
+import env from './env';
 
-Parse.initialize(c.APP_ID);
-Parse.serverURL = `http://localhost:${c.SERVER_PORT}/parse`;
-Parse.masterKey = c.MASTER_KEY;
+Parse.initialize(env.APP_ID);
+Parse.serverURL = env.SERVER_URL;
+Parse.masterKey = env.MASTER_KEY;
 Parse.Cloud.useMasterKey();
 
 const server = express();
@@ -22,19 +21,19 @@ const server = express();
 server.use(
   '/parse',
   new ParseServer({
-    databaseURI: c.DATABASE_URI,
+    databaseURI: env.DATABASE_URI,
     cloud: path.resolve(__dirname, 'cloud.js'),
-    appId: c.APP_ID,
-    masterKey: c.MASTER_KEY,
-    fileKey: c.FILE_KEY,
-    serverURL: `http://${SERVER_HOST}:${SERVER_PORT}/parse`,
+    appId: env.APP_ID,
+    masterKey: env.MASTER_KEY,
+    fileKey: env.FILE_KEY,
+    serverURL: env.SERVER_URL,
   })
 );
 
-if (IS_DEVELOPMENT) {
+if (env.IS_DEVELOPMENT) {
   let users;
-  if (c.DASHBOARD_AUTH) {
-    var [user, pass] = c.DASHBOARD_AUTH.split(':');
+  if (env.DASHBOARD_AUTH) {
+    var [user, pass] = env.DASHBOARD_AUTH.split(':');
     users = [{user, pass}, { user: 'admin', pass: 'admin' }];
     console.log(users);
   }
@@ -44,17 +43,17 @@ if (IS_DEVELOPMENT) {
     ParseDashboard({
       apps: [{
         serverURL: '/parse',
-        appId: c.APP_ID,
-        masterKey: c.MASTER_KEY,
+        appId: env.APP_ID,
+        masterKey: env.MASTER_KEY,
         appName: 'Parse Server',
       }],
       users,
-    }, IS_DEVELOPMENT)
+    }, env.IS_DEVELOPMENT)
   );
 }
 
 server.use('/', (req, res) => res.redirect('/parse'));
 
-server.listen(SERVER_PORT, () => console.log(
-  `Server is now running in ${process.env.NODE_ENV || 'development'} mode on http://localhost:${SERVER_PORT}`
+server.listen(env.SERVER_PORT, () => console.log(
+  `Server is now running in ${process.env.NODE_ENV || 'development'} mode on http://localhost:${env.SERVER_PORT}`
 ));

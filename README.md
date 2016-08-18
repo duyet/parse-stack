@@ -1,6 +1,6 @@
 # parse-stack
 
-![](https://github.com/ParsePlatform/parse-server/raw/master/.github/parse-server-logo.png?raw=true)
+![](.github/parse-stack-logo.png)
 
 Parse Server is [an open source version of the Parse backend](http://blog.parse.com/announcements/introducing-parse-server-and-the-database-migration-tool/) that can be deployed to any infrastructure that can run Node.js.
 

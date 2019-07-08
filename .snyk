@@ -1,0 +1,10 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.13.5
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  SNYK-JS-LODASH-450202:
+    - parse-server > @parse/push-adapter > @parse/node-gcm > lodash:
+        patched: '2019-07-08T05:31:46.848Z'
+    - parse-server > @parse/simple-mailgun-adapter > mailgun-js > async > lodash:
+        patched: '2019-07-08T05:31:46.848Z'

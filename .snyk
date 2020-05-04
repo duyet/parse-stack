@@ -1,0 +1,86 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.14.1
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  SNYK-JS-LODASH-567746:
+    - parse-server > lodash:
+        patched: '2020-05-04T05:31:45.514Z'
+    - parse-dashboard > graphql-playground-react > lodash:
+        patched: '2020-05-04T05:31:45.514Z'
+    - parse-dashboard > graphql-playground-react > redux > lodash:
+        patched: '2020-05-04T05:31:45.514Z'
+    - parse-dashboard > graphql-playground-react > webpack-bundle-analyzer > lodash:
+        patched: '2020-05-04T05:31:45.514Z'
+    - parse-server > @parse/push-adapter > @parse/node-gcm > lodash:
+        patched: '2020-05-04T05:31:45.514Z'
+    - parse-dashboard > graphql-playground-react > styled-components > @babel/traverse > lodash:
+        patched: '2020-05-04T05:31:45.514Z'
+    - parse-dashboard > graphql-playground-react > styled-components > babel-plugin-styled-components > lodash:
+        patched: '2020-05-04T05:31:45.514Z'
+    - parse-server > @parse/simple-mailgun-adapter > mailgun-js > async > lodash:
+        patched: '2020-05-04T05:31:45.514Z'
+    - parse-dashboard > graphql-playground-react > codemirror-graphql > graphql-language-service-interface > graphql-config > lodash:
+        patched: '2020-05-04T05:31:45.514Z'
+    - parse-dashboard > graphql-playground-react > codemirror-graphql > graphql-language-service-parser > graphql-config > lodash:
+        patched: '2020-05-04T05:31:45.514Z'
+    - parse-dashboard > graphql-playground-react > styled-components > @babel/traverse > @babel/generator > lodash:
+        patched: '2020-05-04T05:31:45.514Z'
+    - parse-dashboard > graphql-playground-react > codemirror-graphql > graphql-language-service-interface > graphql-config > graphql-import > lodash:
+        patched: '2020-05-04T05:31:45.514Z'
+    - parse-dashboard > graphql-playground-react > codemirror-graphql > graphql-language-service-interface > graphql-language-service-utils > graphql-config > lodash:
+        patched: '2020-05-04T05:31:45.514Z'
+    - parse-dashboard > graphql-playground-react > graphiql > codemirror-graphql > graphql-language-service-interface > graphql-config > lodash:
+        patched: '2020-05-04T05:31:45.514Z'
+    - parse-dashboard > graphql-playground-react > codemirror-graphql > graphql-language-service-parser > graphql-config > graphql-import > lodash:
+        patched: '2020-05-04T05:31:45.514Z'
+    - parse-dashboard > graphql-playground-react > codemirror-graphql > graphql-language-service-parser > graphql-language-service-types > graphql-config > lodash:
+        patched: '2020-05-04T05:31:45.514Z'
+    - parse-dashboard > graphql-playground-react > codemirror-graphql > graphql-language-service-interface > graphql-language-service-types > graphql-config > lodash:
+        patched: '2020-05-04T05:31:45.514Z'
+    - parse-dashboard > graphql-playground-react > codemirror-graphql > graphql-language-service-interface > graphql-language-service-parser > graphql-config > lodash:
+        patched: '2020-05-04T05:31:45.514Z'
+    - parse-dashboard > graphql-playground-react > styled-components > babel-plugin-styled-components > @babel/helper-annotate-as-pure > @babel/types > lodash:
+        patched: '2020-05-04T05:31:45.514Z'
+    - parse-dashboard > graphql-playground-react > styled-components > @babel/traverse > @babel/helper-split-export-declaration > @babel/types > lodash:
+        patched: '2020-05-04T05:31:45.514Z'
+    - parse-dashboard > graphql-playground-react > codemirror-graphql > graphql-language-service-interface > graphql-language-service-utils > graphql-config > graphql-import > lodash:
+        patched: '2020-05-04T05:31:45.514Z'
+    - parse-dashboard > graphql-playground-react > graphiql > codemirror-graphql > graphql-language-service-interface > graphql-config > graphql-import > lodash:
+        patched: '2020-05-04T05:31:45.514Z'
+    - parse-dashboard > graphql-playground-react > graphiql > codemirror-graphql > graphql-language-service-interface > graphql-language-service-utils > graphql-config > lodash:
+        patched: '2020-05-04T05:31:45.514Z'
+    - parse-dashboard > graphql-playground-react > codemirror-graphql > graphql-language-service-parser > graphql-language-service-types > graphql-config > graphql-import > lodash:
+        patched: '2020-05-04T05:31:45.514Z'
+    - parse-dashboard > graphql-playground-react > codemirror-graphql > graphql-language-service-interface > graphql-language-service-types > graphql-config > graphql-import > lodash:
+        patched: '2020-05-04T05:31:45.514Z'
+    - parse-dashboard > graphql-playground-react > codemirror-graphql > graphql-language-service-interface > graphql-language-service-parser > graphql-config > graphql-import > lodash:
+        patched: '2020-05-04T05:31:45.514Z'
+    - parse-dashboard > graphql-playground-react > codemirror-graphql > graphql-language-service-interface > graphql-language-service-parser > graphql-language-service-types > graphql-config > lodash:
+        patched: '2020-05-04T05:31:45.514Z'
+    - parse-dashboard > graphql-playground-react > codemirror-graphql > graphql-language-service-interface > graphql-language-service-utils > graphql-language-service-types > graphql-config > lodash:
+        patched: '2020-05-04T05:31:45.514Z'
+    - parse-dashboard > graphql-playground-react > graphiql > codemirror-graphql > graphql-language-service-interface > graphql-language-service-types > graphql-config > lodash:
+        patched: '2020-05-04T05:31:45.514Z'
+    - parse-dashboard > graphql-playground-react > graphiql > codemirror-graphql > graphql-language-service-interface > graphql-language-service-parser > graphql-config > lodash:
+        patched: '2020-05-04T05:31:45.514Z'
+    - parse-dashboard > graphql-playground-react > styled-components > @babel/traverse > @babel/helper-function-name > @babel/template > @babel/types > lodash:
+        patched: '2020-05-04T05:31:45.514Z'
+    - parse-dashboard > graphql-playground-react > graphiql > codemirror-graphql > graphql-language-service-interface > graphql-language-service-utils > graphql-config > graphql-import > lodash:
+        patched: '2020-05-04T05:31:45.514Z'
+    - parse-dashboard > graphql-playground-react > codemirror-graphql > graphql-language-service-interface > graphql-language-service-parser > graphql-language-service-types > graphql-config > graphql-import > lodash:
+        patched: '2020-05-04T05:31:45.514Z'
+    - parse-dashboard > graphql-playground-react > codemirror-graphql > graphql-language-service-interface > graphql-language-service-utils > graphql-language-service-types > graphql-config > graphql-import > lodash:
+        patched: '2020-05-04T05:31:45.514Z'
+    - parse-dashboard > graphql-playground-react > graphiql > codemirror-graphql > graphql-language-service-interface > graphql-language-service-types > graphql-config > graphql-import > lodash:
+        patched: '2020-05-04T05:31:45.514Z'
+    - parse-dashboard > graphql-playground-react > graphiql > codemirror-graphql > graphql-language-service-interface > graphql-language-service-parser > graphql-config > graphql-import > lodash:
+        patched: '2020-05-04T05:31:45.514Z'
+    - parse-dashboard > graphql-playground-react > graphiql > codemirror-graphql > graphql-language-service-interface > graphql-language-service-parser > graphql-language-service-types > graphql-config > lodash:
+        patched: '2020-05-04T05:31:45.514Z'
+    - parse-dashboard > graphql-playground-react > graphiql > codemirror-graphql > graphql-language-service-interface > graphql-language-service-utils > graphql-language-service-types > graphql-config > lodash:
+        patched: '2020-05-04T05:31:45.514Z'
+    - parse-dashboard > graphql-playground-react > graphiql > codemirror-graphql > graphql-language-service-interface > graphql-language-service-parser > graphql-language-service-types > graphql-config > graphql-import > lodash:
+        patched: '2020-05-04T05:31:45.514Z'
+    - parse-dashboard > graphql-playground-react > graphiql > codemirror-graphql > graphql-language-service-interface > graphql-language-service-utils > graphql-language-service-types > graphql-config > graphql-import > lodash:
+        patched: '2020-05-04T05:31:45.514Z'

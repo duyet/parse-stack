@@ -27,7 +27,7 @@
   "homepage": "https://github.com/duyetdev/parse-stack#readme",
   "dependencies": {
     "express": "^4.14.0",
-    "parse": "^1.9.1",
+    "parse": "^3.3.0",
     "parse-dashboard": "^1.0.15",
     "parse-server": "^2.2.17"
   },

@@ -28,7 +28,7 @@
   "dependencies": {
     "express": "^4.14.0",
     "parse": "^3.0.0",
-    "parse-dashboard": "^3.0.0",
+    "parse-dashboard": "^4.0.0",
     "parse-server": "^4.0.0"
   },
   "engines": {
